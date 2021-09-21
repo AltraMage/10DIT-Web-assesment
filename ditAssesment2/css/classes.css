@@ -1,0 +1,50 @@
+:root{
+    --bg_color: #eb8634;
+    --accent: #e0bea2;
+   }
+
+.headerImage{
+	margin: 10px;
+	grid-column-start: 4;
+	grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    object-fit: cover;
+    width: 225px;
+    height: 225px;
+}
+
+hr{
+ width: auto;
+ border: 4px solid #fff;
+}
+
+.center{ text-align: center;}
+
+.counters{
+    counter-reset: counter-name;
+    position: relative;
+    margin-left: 2em;
+    line-height: 110%;
+    top: -3em;
+}
+
+.counter::before{
+    counter-increment: counter-name;
+    content: counter(counter-name);
+    position: relative;
+    background: #fff;
+    height: 1.5em;
+    width: 1.5em;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid #e0bea2;
+    box-sizing: border-box;
+    top: 1em;
+    left: -2em;
+}
+
+.ball{clip-path: circle(40% at 50% 50%);}

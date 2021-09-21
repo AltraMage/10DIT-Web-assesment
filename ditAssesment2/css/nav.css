@@ -1,0 +1,45 @@
+:root{
+    --acent: #e0bea2;
+   }
+
+a[href]::after{
+    content: "\01F855";
+}
+
+a, a:visited{
+    height: 1em;
+    font-family: calibri;
+    font-size: 1.75em;    
+    text-decoration: underline;
+    color: #ffeee0;
+    
+}
+
+/* The box outside the links */
+.linkMargin{    
+    text-align: center;
+    width: 15%;
+    height: 3em;
+    float: left;
+    margin-left: 8%;
+    margin-top: 10px;
+    background-color: var(--acent);
+    border: 2px solid #ffeee0;
+    border-radius: 5%;
+    transition: ease-in 200ms;
+    align-content: center;
+}
+
+.linkMargin:hover{
+    border: 2px solid #555;
+    height: 2.85em;
+}
+
+.blocked{
+    opacity: 0.4;
+}
+
+.blocked:hover{
+    cursor: not-allowed;
+}
+

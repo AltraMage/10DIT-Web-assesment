@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<title>Logan's Projects</title>
+<meta name="copyright" content="Logan Simonsen">
+<meta name="author" content="Logan Simonsen">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./css/master.css">
+<link rel="icon" href="Logan.jpg">
+<script src="./js/colorChanges.js"></script>
+<script src="./js/images.js"></script>
+<body onload="currentSlide(1)"></body>
+</head>
+
+<body>
+    <wrapper>
+       <nav>
+            <div class="linkMargin"> <a href="index.html">Index </a> </div>  
+            <div class="linkMargin"> <a href="aboutMe.html">About Me </a> </div> 
+            <div class="linkMargin blocked"> <a href="projects.html">Projects </a> </div>
+            <div class="linkMargin"> <a target="_blank" href="https://github.com/AltraMage/">My GitHub</a> </div>
+
+        </nav>
+
+        <header>
+            <h2>Logan's</h2>
+            <h2>Portfoilo</h2>
+        </header>
+
+        <div class="headerImage">
+            <img src="Logan.jpg" alt="Ugly photo of the author" width="100%" height="100%" class="ball">
+        </div>
+
+        <aside>
+            <h2>Often I don't work on projects</h2>
+            <p>But when I do, Its to find out how certain functions work or, in most cases do my math school work for me</p>
+            <p>I also have been trying to mod games like minecraft which is notorious for its modding capability's.</p>
+            <p>One of my favorite projects ive worked on would probably be the number guesser game I made earlier this year. I learnt so much about python and coding in general during that time period. Especially error checking. </p>
+        </aside>
+        <article>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+            <h3>Python</h3>
+                <p>Unfortunately python doesn't work in web-browsers client side. Instead if your intrested, you can go vist my github using the link in the top right corner! This will show some of the things I've worked on this year. Most of the projects would be incomplete prototypes and are just ideas, concepts, ect. Either way I believe its a good way to show case my development style.</p>
+            </div>
+            
+            <div class="mySlides fade" id="colorChanger">
+              <div class="numbertext">2 / 3</div>
+              <h3>Javascript <input id="picker" type="color"></h3>
+                <p>Do you like the color of the webpage? No? Change it by clicking <button id="color" onclick="update()">This Button</button> <br>That button just takes the value from the color picker next to the sub-header, and then updates the html div in just two lines of code. If I wanted to I could convert it into one line, but I like to have my code easily read-able. <br> Often my, with my friend, I will inspect element to see how other people would have done certain things.</p>
+            
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+            <h3>Java</h3>
+                <p>I have been trying to learn java for modding minecraft. and have since mostly failed misserably, even with account for this I have still learn alot mainly in regards to how java works. And partily about computaional thinking. All round, don't learn it unless you have too!</p>
+            
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+        </article>
+        <article>
+            <br>
+            <br>
+            <br>
+            <h2>A builder is useless without tools.</h2>
+            <h4>Here is some of the software I use when coding.</h4> 
+            <p>Visual Studio Code is microsoft's IDE and the editor of choice for many, including me! I like it because of its adjustable panes meaning you can change how it looks to your own standard. I just wish it had a spell checkerr. The languages I use in VS code are: </p> 
+            <p>Python; I like to use imports so being able to use two tabs of code at once is a big thing for me. </p> 
+            <p>HTML, JS, CSS; VS code has built in features to help you make the best website you can by highlighting incorrect code, helping you link pages and reloading the browser page when ever you save. </p>
+            <p>Another software I use is called stackoverflow, If you are having a problem, somebody else has had the same one. Stackoverflow is a online forum for coding with a vast array of languages being discuss. Helped me multiple time 10/10, would recommend! <a href="https://stackoverflow.com/">LINK</a></p>
+        </article>        
+
+        <footer>
+            <p>All Images are used under Creative Commons</p>
+            <p>Any Bugs? Email me! <a target="_blank" href="mailTo:0lsimonsen@tawacollege.school.nz">Click here</a></p>
+            <p>&#169; Logan Simonsen 2021</p>
+        </footer>
+</wrapper>
+		
+		<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+		
+		<audio id="player" autoplay loop>
+			<source src="wallpaper.mp3" type="audio/mp3">
+		</audio>
+</body>
+</html>
